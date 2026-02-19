@@ -3,9 +3,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tz;
 
-// ============================================================
-// INIZYALIZASYON PLUGIN NOTIFIKASYON
-// ============================================================
+
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 
@@ -38,9 +36,6 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
-// ============================================================
-// APP PRENSIPAL
-// ============================================================
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -58,9 +53,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ============================================================
-// SPLASH SCREEN (6 segonn)
-// ============================================================
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -93,7 +85,6 @@ class _SplashScreenState extends State<SplashScreen>
 
     _controller.forward();
 
-    // Apre 6 segonn ale nan ekran prensipal
     Future.delayed(const Duration(seconds: 6), () {
       if (mounted) {
         Navigator.of(context).pushReplacement(
