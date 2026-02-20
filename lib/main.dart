@@ -53,6 +53,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1929150 ( notifikasyon)
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -85,6 +89,10 @@ class _SplashScreenState extends State<SplashScreen>
 
     _controller.forward();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1929150 ( notifikasyon)
     Future.delayed(const Duration(seconds: 6), () {
       if (mounted) {
         Navigator.of(context).pushReplacement(
